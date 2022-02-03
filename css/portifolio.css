@@ -1,0 +1,23 @@
+.interna-portifolio {
+  background: url("../img/bg-portifolio.jpg") no-repeat center;
+  background-size: cover;
+}
+.quote_cliente {
+  padding: 60px 0; /* ter uma largura de 60px*/
+  max-width: 460px; /* tenha um tamanho maximo de 500px para o texto*/
+  margin: 0 auto; /* alinhado ao centro*/
+}
+.quote_cliente p {
+  text-align: center; /* Alinhas o texto ao centro*/
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 25px;
+  font-style: italic;
+  margin-bottom: 20px; /* margem para baixo de 20px*/
+}
+.quote_cliente cite {
+  font-size: 18px;
+  font-weight: bold;
+  float: right; /* colocar o nome a direita do texto*/
+  font-style: normal; /* tirar do italico */
+}
