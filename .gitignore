@@ -1,2 +1,3 @@
 ?sendgrid
-sendgrid-pgp/
+sendgrid-php/
+enviar-sendgrid.php

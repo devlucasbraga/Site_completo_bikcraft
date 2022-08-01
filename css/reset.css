@@ -1,18 +1,11 @@
-/* ==========================================================================
-   Reset
-   ========================================================================== */
-
-/**
- * Remove anchor tex-decoration
- */ 
+ /* Remove anchor tex-decoration */
 
 a {
 	text-decoration: none;
 }
 
-/**
- * Remove list-style
- */ 
+ /* Remove list-style  */
+ 
 
 ol, ul {
 	list-style: none;
