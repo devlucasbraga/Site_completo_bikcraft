@@ -11,7 +11,7 @@
   /* Footer */
 
   .footer_redes ul li a {
-    border: 3px solid #fec63e;
+    border: 3px solid $cor-primary;
     display: block;
     padding: 5px;
   }
@@ -30,8 +30,7 @@
     padding: 41px 0;
   }
   .produto-info p {
-    font-size: 14px;
-    line-height: 20px;
+    @include type-1(14);
     padding: 20px 20px;
     height: 121px;
   }
@@ -65,16 +64,16 @@
     display: block;
   }
   .header_menu ul li a:hover {
-    border-color: #fff;
+    border-color: $cor-secundary-2;
   }
   .header_menu ul li a.menu_ativo {
-    border-color: #fff;
+    border-color: $cor-secundary-2;
   }
 
   /* Introdução*/
 
   .introducao h1 {
-    font-size: 36px;
+    @include type-1(36);
   }
 
   .introducao {
@@ -98,19 +97,18 @@
   /* Sobre*/
 
   .misao_sobre p {
-    font-size: 14px;
-    line-height: 20px;
+    @include type-1(14);
     padding-right: 0px;
   }
   .misao_sobre ul li {
-    font-size: 14px;
+    @include type-1(14);
     line-height: 25px;
   }
 
   /* Produtos*/
 
   .produto-item h2 {
-    font-size: 24px;
+    @include type-1(24);
     top: -100px;
     margin-bottom: -50px;
   }
@@ -118,16 +116,14 @@
     padding: 41px 0;
   }
   .produto-info p {
-    font-size: 14px;
-    line-height: 20px;
+    @include type-1(14);
     padding: 20px 20px;
     height: auto;
   }
   .produto-info ul li {
     width: 149px;
     height: 49px;
-    font-size: 14px;
-    line-height: 20px;
+    @include type-1(14);
   }
 
   /* Formulario */

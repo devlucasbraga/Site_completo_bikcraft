@@ -9,14 +9,12 @@
 }
 .quote_cliente p {
   text-align: center; /* Alinhas o texto ao centro*/
-  font-size: 18px;
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 25px;
   font-style: italic;
   margin-bottom: 20px; /* margem para baixo de 20px*/
+  @include type-1(18);
 }
 .quote_cliente cite {
-  font-size: 18px;
+  @include type-1(18);
   font-weight: bold;
   float: right; /* colocar o nome a direita do texto*/
   font-style: normal; /* tirar do italico */

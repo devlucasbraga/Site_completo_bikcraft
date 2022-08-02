@@ -6,15 +6,12 @@
   padding-top: 60px;
 }
 .misao_sobre p {
-  font-size: 18px;
-  line-height: 25px;
+  @include type-1(18);
   margin-bottom: 1em;
   padding-right: 60px;
 }
 .misao_sobre ul li {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 18px;
-  line-height: 30px;
+  @include type-1(18);
 }
 .foto-equipe {
   padding-top: 20px;
