@@ -813,6 +813,13 @@ img {
   z-index: -1;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .qualidade::after {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
 .qualidade img {
   margin: 0 auto;
 }
@@ -1367,15 +1374,8 @@ img {
   padding: 20px 0 60px 0;
 }
 
-/* Usando o media queries para torna o site responsivos*/
 /* Tela de tablet*/
 @media only screen and (min-width: 788px) and (max-width: 979px) {
-  /* Qualidade Home */
-  /* Diminuir o padding dos texto de qualidade */
-  .qualidade li {
-    text-align: center;
-    padding: 0 10px;
-  }
   /* Footer */
   .footer_redes ul li a {
     border: 3px solid #fec63e;

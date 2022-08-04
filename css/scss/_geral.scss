@@ -59,8 +59,8 @@ img {
   background: #000;
   margin: 8px 0;
 }
-/* Header*/
 
+/* Header*/
 .header {
   position: fixed;
   top: 0;
@@ -68,14 +68,30 @@ img {
   background: $cor-primary;
   padding: 15px 0px;
   z-index: 10;
+  @include relative(m) {
+    position: relative; /* tirar do fixo, para ele sumir conforme rolar a pagina*/
+    padding-bottom: 0px;
+  }
+}
+.header img {
+  @include relative(m) {
+    margin: 0 auto 10px auto; /* ajustar o logo automatico */
+  }
 }
 .header_menu {
   text-align: right;
+  @include relative(m) {
+    text-align: center;
+  }
 }
 .header_menu ul li {
   display: inline-block;
   margin-left: 25px;
   margin-top: 20px;
+  @include responsivo(m) {
+    display: inline-block;
+    margin: 7px 5px 3px 0;
+  }
 }
 .header_menu ul li a {
   color: #000;
@@ -84,12 +100,23 @@ img {
   letter-spacing: 0;
   @include type-1(14);
   padding: 10px 0px;
+  @include responsivo(m) {
+    border: 4px solid #000;
+    width: 120px;
+    display: block;
+  }
 }
 .header_menu ul li a:hover {
   color: $cor-secundary-2;
+  @include relative(m) {
+    border-color: $cor-secundary-2;
+  }
 }
 .header_menu ul li a.menu_ativo {
   color: $cor-secundary-2;
+  @include relative(m) {
+    border-color: $cor-secundary-2;
+  }
 }
 /*Introdução*/
 .introducao {
@@ -100,6 +127,11 @@ img {
   margin-top: 92px;
   text-align: center;
   padding-top: 80px;
+  @include responsivo(m) {
+    margin-top: 0px;
+    padding-top: 60px;
+    background: url("../img/bg-mobile.jpg") no-repeat center;
+  }
 }
 .introducao h1 {
   @include type-1(48);
@@ -107,6 +139,9 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   font-family: Helvetica, arial, sans-serif;
+  @include relative(m) {
+    @include type-1(36);
+  }
 }
 .quote-externo {
   max-width: 320px;
@@ -144,6 +179,9 @@ img {
   text-align: center;
   color: $cor-secundary-2;
   padding-top: 40px;
+  @include relative(m){
+    margin-top: 0px;
+  }
 }
 .introducao-interna h1 {
   @include type-1(36);
@@ -196,6 +234,9 @@ img {
   text-align: center;
   padding-top: 40px;
   clear: both;
+  @include relative(m){
+    padding-top: 10px;
+  }
 }
 .call p {
   margin-bottom: 20px;
@@ -232,6 +273,10 @@ img {
   top: 209px;
   right: 162px;
   z-index: -1;
+  @include responsivo(t) {
+    text-align: center;
+    padding: 0 10px;
+  }
 }
 .qualidade img {
   margin: 0 auto;
@@ -239,6 +284,9 @@ img {
 .qualidade li {
   text-align: center;
   padding: 0 40px;
+  @include relative(t) {
+    padding: 0 10px;
+  }
 }
 .qualidade_lista {
   padding-top: 20px;
@@ -312,6 +360,18 @@ img {
   border: 3px solid $cor-primary;
   display: block;
   padding: 6px;
+  @include relative(t) {
+    border: 3px solid $cor-primary;
+    display: block;
+    padding: 5px;
+  }
+}
+
+.footer_redes ul li a img {
+  @include relative(t) {
+    right: 26px;
+    height: 26px;
+  }
 }
 .footer_redes ul li a:hover {
   border-color: $cor-secundary-2;

@@ -15,6 +15,10 @@
 }
 .contato_form {
   padding-right: 60px; /*Ter uma distancia de a direita de 60px do outro bloco  */
+  @include responsivo(m) {
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
 }
 .contato_form label {
   display: block; /*quebras a label em blocos e ficar uma embaixo da outra*/
@@ -80,4 +84,7 @@
 }
 .endereco {
   padding: 20px 0 60px 0;
+  @include responsivo(m) {
+    padding: 0px 0 60px 0;
+  }
 }

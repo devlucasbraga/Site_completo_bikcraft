@@ -1,3 +1,15 @@
+@mixin responsivo($dispositivo) {
+  @if $dispositivo == t {
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      @content;
+    }
+  } @else if $dispositivo == m {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -48,7 +60,7 @@ $colunas: 16;
 
 /* Usando o media queries para torna o site responsivos*/
 /* tamanho de tela para tablets  */
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@include responsivo(t) {
   $container: 768;
 
   @for $i from 1 through $colunas {
@@ -68,7 +80,7 @@ $colunas: 16;
 }
 
 /* tela de mobile */
-@media only screen and (max-width: 767px) {
+@include responsivo(m) {
   $container: 300;
 
   %mobile {

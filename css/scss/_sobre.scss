@@ -9,9 +9,17 @@
   @include type-1(18);
   margin-bottom: 1em;
   padding-right: 60px;
+  @include responsivo(m) {
+    @include type-1(14);
+    padding-right: 0px;
+  }
 }
 .misao_sobre ul li {
   @include type-1(18);
+  @include responsivo(m) {
+    @include type-1(14);
+    line-height: 25px;
+  }
 }
 .foto-equipe {
   padding-top: 20px;
